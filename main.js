@@ -9,7 +9,7 @@ numberInput.addEventListener('input', getFactFetch);
 
 //  if(number !== '') {
 //      let xhr = new XMLHttpRequest();
-//      xhr.open('GET', 'https://numbersapi.com/' + number);
+//      xhr.open('GET', 'http://numbersapi.com/' + number);
 //      xhr.onload = function() {
 //        if(this.status == 200) {
 //          fact.style.display = 'block';
@@ -24,7 +24,7 @@ function getFactFetch() {
   let number = numberInput.value;
 
   if (number != '') {
-    fetch('https://numbersapi.com/' + number)
+    fetch('http://numbersapi.com/' + number)
       .then(response => response.text())
       .then(data => {
         fact.style.display = 'block';
